@@ -33,3 +33,13 @@ Good contributions include:
 - compatibility fixes for migrated skill ecosystems
 
 Please avoid introducing provider-specific abstractions into the public capability surface unless they clearly improve multi-harness compatibility.
+
+## Releases
+
+```bash
+pnpm typecheck
+git tag vX.Y.Z
+git push origin main --tags
+```
+
+GitHub Actions publishes tagged releases to npm when `NPM_TOKEN` is configured.

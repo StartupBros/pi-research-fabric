@@ -170,11 +170,13 @@ pnpm typecheck
 pi -e .
 ```
 
-## Project hygiene
+## Release process
 
 - CI runs `pnpm typecheck` on pushes and pull requests
-- Changes are tracked in [`CHANGELOG.md`](./CHANGELOG.md)
-- Contribution guidance lives in [`CONTRIBUTING.md`](./CONTRIBUTING.md)
+- tags matching `v*` trigger the npm publish workflow
+- npm publishing expects a repository secret named `NPM_TOKEN`
+- changes are tracked in [`CHANGELOG.md`](./CHANGELOG.md)
+- contribution guidance lives in [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
 ## License
 
