@@ -28,8 +28,13 @@
     ]
   },
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm typecheck"
   },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@10.26.2",
   "peerDependencies": {
     "@mariozechner/pi-ai": "*",
     "@mariozechner/pi-coding-agent": "*",

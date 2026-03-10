@@ -1,5 +1,7 @@
 # pi-research-fabric
 
+[![CI](https://github.com/StartupBros/pi-research-fabric/actions/workflows/ci.yml/badge.svg)](https://github.com/StartupBros/pi-research-fabric/actions/workflows/ci.yml)
+
 Cross-harness research capabilities for [Pi](https://github.com/badlogic/pi-mono).
 
 This package adds four stable capability tools that are especially useful when migrating shared skills, prompts, or commands from other agent harnesses:
@@ -167,6 +169,12 @@ pnpm install
 pnpm typecheck
 pi -e .
 ```
+
+## Project hygiene
+
+- CI runs `pnpm typecheck` on pushes and pull requests
+- Changes are tracked in [`CHANGELOG.md`](./CHANGELOG.md)
+- Contribution guidance lives in [`CONTRIBUTING.md`](./CONTRIBUTING.md)
 
 ## License
 
