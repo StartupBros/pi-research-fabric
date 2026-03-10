@@ -1,0 +1,55 @@
+{
+  "name": "@startupbros/pi-research-fabric",
+  "version": "0.1.0",
+  "description": "Cross-harness research capability tools for Pi: WebSearch, WebFetch, CodeContextSearch, and SiteMap.",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-extension",
+    "pi-coding-agent",
+    "research",
+    "web-search",
+    "firecrawl",
+    "exa",
+    "brave",
+    "compatibility",
+    "cross-harness"
+  ],
+  "type": "module",
+  "files": [
+    "extensions/",
+    "examples/",
+    "README.md",
+    "LICENSE"
+  ],
+  "pi": {
+    "extensions": [
+      "./extensions/index.ts"
+    ]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-ai": "^0.57.1",
+    "@mariozechner/pi-coding-agent": "^0.57.1",
+    "@sinclair/typebox": "^0.34.41",
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StartupBros/pi-research-fabric.git"
+  },
+  "bugs": {
+    "url": "https://github.com/StartupBros/pi-research-fabric/issues"
+  },
+  "homepage": "https://github.com/StartupBros/pi-research-fabric#readme",
+  "author": "StartupBros",
+  "license": "MIT"
+}

@@ -1,0 +1,12 @@
+{
+  "searchProviders": ["exa", "brave", "firecrawl"],
+  "fetchProviders": ["firecrawl", "direct"],
+  "codeContextProviders": ["exa"],
+  "siteMapProviders": ["firecrawl"],
+  "preferDynamicFetchForDomains": ["openai.com", "anthropic.com"],
+  "cacheDir": "~/.pi/agent/cache/research-fabric",
+  "searchTtlMs": 21600000,
+  "fetchTtlMs": 86400000,
+  "codeContextTtlMs": 86400000,
+  "siteMapTtlMs": 86400000
+}
