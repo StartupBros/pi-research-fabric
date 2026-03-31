@@ -470,8 +470,11 @@ class ExaMcpClient {
   private initialized = false;
   private initializing: Promise<void> | null = null;
   private lastEndpoint: string | null = null;
+  private readonly getConfig: () => ExaConfig;
 
-  constructor(private readonly getConfig: () => ExaConfig) {}
+  constructor(getConfig: () => ExaConfig) {
+    this.getConfig = getConfig;
+  }
 
   currentEndpoint(): string {
     return resolveExaEndpoint(this.getConfig());
